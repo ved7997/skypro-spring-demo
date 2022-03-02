@@ -25,7 +25,4 @@ public class CalculatorService implements CalculatorServiceIntr{
             }
             return String.valueOf( num1 / num2);
         }
-
-
-
 }

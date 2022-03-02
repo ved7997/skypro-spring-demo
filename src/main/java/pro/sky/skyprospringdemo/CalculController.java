@@ -23,7 +23,8 @@ public class CalculController {
 
     @GetMapping("/plus")
         public String plus(@RequestParam("num1") int num1, @RequestParam("num2") int num2){
-            return  num1 + " + " + num2 + " = " + calculatorServiceIntr.plus(num1, num2);
+
+        return  num1 + " + " + num2 + " = " + calculatorServiceIntr.plus(num1, num2);
         }
 
     @GetMapping("/minus")
