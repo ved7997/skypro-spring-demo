@@ -1,6 +1,10 @@
-package pro.sky.skyprospringdemo;
+package pro.sky.skyprospringdemo.service;
 
-public interface CalculatorServiceIntr {
+import org.springframework.stereotype.Service;
+
+@Service
+public interface CalculatorService  {
+
     int plus(int num1, int num2);
 
     int minus(int num1, int num2);
@@ -8,4 +12,6 @@ public interface CalculatorServiceIntr {
     int multiply(int num1, int num2);
 
     String divide(int num1, int num2);
+
+
 }
