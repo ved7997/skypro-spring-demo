@@ -39,6 +39,8 @@ class CalculatorServiceImplTest {
         int actual2 = THREE / THREE;
        Assertions.assertEquals(calculatorService.divide(TWO, ONE), actual1);
         Assertions.assertEquals(calculatorService.divide(THREE, THREE), actual2);
+        Assertions.assertThrows(IllegalArgumentException.class,()-> calculatorService.divide(THREE, ZERO));
+
 
     }
 }
